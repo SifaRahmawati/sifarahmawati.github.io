@@ -221,9 +221,13 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Thank You !</strong> We have received your message.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <form>
               <div class="mb-3">
-                <label for="Name1" class="form-label">Name</label>
+                <label for="Name1" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" />
               </div>
               <div class="mb-3">
@@ -236,6 +240,10 @@
               </div>
 
               <button type="submit" class="btn text-white" style="background-color: #076957">Kirim</button>
+              <button class="btn text-white d-none" type="button" disabled style="background-color: #076957">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
